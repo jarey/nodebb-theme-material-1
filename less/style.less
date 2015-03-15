@@ -300,3 +300,247 @@ input[type="checkbox"] {
 .groups .checkbox p {
     padding-left: 30px;
 }
+
+
+//Semantic UI
+/*******************************
+            Homepage
+*******************************/
+
+#example.index .pusher > .page {
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    overflow-x: visible;
+    -webkit-overflow-scrolling: auto;
+  }
+}
+#example > .pusher {
+  display: block;
+  min-height: 0px;
+  flex-direction: initial;
+}
+#example > .pusher > .full.height {
+  flex: none !important;
+}
+
+/*--------------
+    Masthead
+---------------*/
+
+#example.index .masthead {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 0em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0px;
+  border-bottom: none;
+
+  background-color: #009189;
+  background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-position: 50% 50%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  -ms-transition: background-color 3s ease-in-out 1s;
+  -moz-transition: background-color 3s ease-in-out 1s;
+  -webkit-transition: background-color 3s ease-in-out 1s;
+  transition: background-color 3s ease-in-out 1s;
+}
+#example.index .masthead.zoomed {
+  background-color: #2A2A2A;
+  animation: none;
+  -webkit-animation: none;
+}
+#example .masthead .grid {
+  margin: 0em;
+  padding: 15rem 0em;
+}
+#example.index .following.bar iframe.github {
+  margin-top: 0px;
+}
+#example.index.pushed .masthead,
+#example.index.pushed .following.bar {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+#example.index .fixed.following.bar {
+  background-image: none;
+}
+#example.index .fixed.following.bar {
+  position: fixed;
+  top: 0px;
+  padding: 1em 0em;
+  background-color: #FFFFFF;
+}
+#example.index .fixed.light.following.bar {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+#example.index .masthead.segment .typed-cursor {
+  position: relative;
+  top: -0.05em;
+  left: -0.25em;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+/*--------------
+    Following
+---------------*/
+
+#example.index .following.bar {
+  position: absolute;
+  top: 0px;
+  z-index: 900;
+  left: 0%;
+  padding: .5em 0em;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px transparent;
+  border-bottom: 1px solid transparent;
+  transition:
+    padding 0.5s ease,
+    background 0.5s ease,
+    box-shadow 0.5s ease,
+    border 0.5s ease
+  ;
+}
+#example.index .following.bar > .menu .item {
+  transition: all 0.5s ease;
+}
+#example.index.pushed .following.bar .menu .item,
+#example.index.pushed .following.bar {
+  transition: none;
+}
+#example.index .following.bar .additional.item {
+  display: none;
+}
+#example.index .following.bar .additional.item[data-site="learn"]:hover {
+  color: #D9499A;
+}
+#example.index .following.bar span.additional.item {
+  cursor: default;
+  color: rgba(0, 0, 0, 0.2);
+}
+#example.index .following.bar .inverted span.additional.item {
+  color: rgba(255, 255, 255, 0.2);
+}
+#example.index .following.bar .column > .menu {
+  margin-top: 0px;
+  height: 35px;
+  font-weight: bold;
+}
+#example.index .following.bar .network.menu .view-ui {
+  margin-right: 1em;
+}
+#example.index .fixed.following.bar .network.menu .view-ui {
+  color: #00B5AD;
+}
+#example.index .fixed.following.bar .inverted.network.menu .view-ui {
+  color: #6DFFFF;
+}
+#example.index .following .logo {
+  float: left;
+  width: 35px;
+  margin-right: 1em;
+}
+#example.index .following .logo .side {
+  width: 35px;
+}
+
+#example.index .following .version.label {
+  margin: 0.25em 0px 0px 1em;
+}
+
+
+
+@media only screen and (max-width : 600px) {
+  #example.index .masthead.segment h1 .text {
+    margin-left: 0em;
+  }
+  #example.index .following.bar {
+    display: none;
+  }
+  #example.index .masthead:before {
+    display: none;
+  }
+  #example.index .following.bar .column {
+    text-align: center;
+  }
+  #example.index .following .logo {
+    float: none;
+  }
+  #example.index .codebase.stripe {
+    display: none;
+  }
+  #example.index .following .version.label {
+    vertical-align: top;
+    margin-top: 0em;
+  }
+  #example .masthead .grid {
+    padding: 6rem 0rem;
+  }
+  #example.index .masthead.segment h1 {
+    font-size: 2.25em;
+  }
+  #example.index .email.stripe .input {
+    width: auto;
+  }
+  #example.index .following .secondary.menu {
+    display: none;
+  }
+  #example.index .email.stripe .submit.button {
+    margin-top: 0.5em;
+  }
+  #example.index .stripe .icon.header .icon.image {
+    height: 50px;
+  }
+  #example.index .stripe {
+    padding: 2em 0em !important;
+  }
+}
+
+
+/* Homepage */
+@media only screen and (max-width : 810px) {
+  #example.index .following.bar span.additional.item {
+    display: none;
+    visibility: hidden !important;
+  }
+  #example.index .following.bar .network.menu .view-ui {
+    margin-right: 0.75em;
+  }
+}
+
+
+@media only screen and (max-width : 1040px) {
+  #example.index .following.bar .network.menu .view-ui {
+    margin-right: 0.5em;
+  }
+}
