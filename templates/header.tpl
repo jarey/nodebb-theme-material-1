@@ -50,12 +50,10 @@
 <body>
     <div id="example" class="index pushable">
         <div class="following bar">
-            <div class="ui page grid">
-                <div class="header" role="navigation" id="header-menu">
-                    <div class="loading-bar"></div>
-                    <div class="container">
-                        <!-- IMPORT partials/menu.tpl -->
-                    </div>
+            <div class="header" role="navigation" id="header-menu">
+                <div class="loading-bar"></div>
+                <div class="container">
+                    <!-- IMPORT partials/menu.tpl -->
                 </div>
             </div>
         </div>
