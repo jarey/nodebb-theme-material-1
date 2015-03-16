@@ -50,7 +50,7 @@
 <body>
    
     <div class="following bar">
-        <div class="navbar navbar-default header" role="navigation" id="header-menu">
+        <div class="navbar header" role="navigation" id="header-menu">
             <div class="loading-bar"></div>
             <div class="container">
                 <!-- IMPORT partials/menu.tpl -->
