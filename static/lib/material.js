@@ -145,11 +145,11 @@ $('document').ready(function() {
                     once: false,
                     continuous: false,
                     onTopPassed: function() {
-                      $('.following.bar')
+                      $('.navbar.header')
                         .addClass('light fixed');
                     },
                     onTopPassedReverse: function() {
-                      $('.following.bar')
+                      $('.navbar.header')
                         .removeClass('light fixed');
                     }
                   });
