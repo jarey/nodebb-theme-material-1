@@ -138,7 +138,7 @@ $('document').ready(function() {
 			$.material.init();
             
             //Semantic UI
-            if($(window).width() > 600) {
+            //if($(window).width() > 600) {
                 $('body')
                   .visibility({
                     offset: -1,
@@ -153,7 +153,7 @@ $('document').ready(function() {
                         .removeClass('light fixed');
                     }
                   });
-              }
+              //}
             
 		});
     });
