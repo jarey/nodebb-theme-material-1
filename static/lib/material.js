@@ -146,21 +146,11 @@ $('document').ready(function() {
                     continuous: false,
                     onTopPassed: function() {
                       $('.following.bar')
-                        .addClass('light fixed')
-                        .find('.menu')
-                          .removeClass('inverted');
-                      requestAnimationFrame(function() {
-                        $('.following .additional.item')
-                          .transition('scale in', 750);
-                      });
+                        .addClass('light fixed');
                     },
                     onTopPassedReverse: function() {
                       $('.following.bar')
-                        .removeClass('light fixed')
-                        .find('.menu')
-                          .addClass('inverted')
-                          .find('.additional.item')
-                            .transition('hide');
+                        .removeClass('light fixed');
                     }
                   });
               }
