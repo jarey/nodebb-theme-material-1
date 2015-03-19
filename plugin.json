@@ -12,8 +12,6 @@
 	"scripts": [
 		"static/lib/material.js",
 		"static/vendor/masonry.js",
-		"static/vendor/imagesLoaded.js",
-        "static/vendor/ripples.js",
-        "static/vendor/materialize.js"
+		"static/vendor/imagesLoaded.js"
 	]
 }
