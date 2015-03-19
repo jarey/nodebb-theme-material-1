@@ -3,7 +3,7 @@
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<!-- IF loggedIn -->
-	<button id="new_topic" class="btn btn-primary btn-raised">[[category:new_topic_button]]</button>
+	<button id="new_topic" class="btn btn-primary waves-effect waves-light">[[category:new_topic_button]]</button>
 	<!-- ELSE -->
 	<a href="/login?next=recent" class="btn btn-primary">[[category:guest-login-post]]</a>
 	<!-- ENDIF loggedIn -->
